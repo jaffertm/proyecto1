@@ -1,0 +1,80 @@
+/*PASO1
+Quitar estilo de Viñeta*/
+ul{
+    list-style-type: none;
+}
+
+/*PASO 2*/
+*{
+    margin: 0px;
+    padding: 1px;
+}
+
+/*PASO 3 
+APLICAR FORMATO AL MENU PRINCIPAL*/
+nav li a{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #2B2E2B;
+    padding: 13px 12px;
+    display: block;
+    border-radius: 10px;
+}
+
+/*PASO 4
+ACOMODAREMOS EL MENU PRINCIPAL*/
+.menuprincipal{
+    float: left;
+}
+
+/*PASO 5
+APLICAR FORMATO A LA BARRA DE MENU*/
+nav{
+    width: 400px;
+    height: 60px;
+    margin: auto;
+}
+
+/*PASO 6
+APLICAR EFECTO USANDO HOVER*/
+nav li a:hover{
+    background-color: darkgray;
+}
+
+/*PASO 7
+OCULTAREMOS EL SUMBENÚ NIVEL 2 Y AJUSTAREMOS
+LA POSICIÓN Y MODIFCAREMOS EL ANCHO*/
+nav li ul{
+    position: absolute;
+    min-width: 140px;
+    display: none;/*OCULTAR*/
+}
+
+/*PASO 8
+MISTAR EL SUB NIVEL 2 USANDO HOVER*/
+nav li:hover >ul{
+    display: block;
+}
+
+body{
+    background-color: #4F5952;
+    text-align: justify;
+    margin-top: 3px;
+}
+
+header{
+    background-color: #2B2E2B;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+p{
+    font-size: 150%;
+    border-radius: 10px;
+    margin: 15px;
+}
